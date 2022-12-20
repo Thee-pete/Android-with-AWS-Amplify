@@ -17,6 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidWithAWSAmplify"
         tools:targetApi="31">
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -29,6 +30,18 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
+        </activity>
+        <activity
+            android:name="com.amazonaws.mobileconnectors.cognitoauth.activities.CustomTabsRedirectActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="gettingstarted" />
+            </intent-filter>
         </activity>
     </application>
 

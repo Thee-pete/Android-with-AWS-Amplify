@@ -1,0 +1,14 @@
+{
+  "resourceName": "image",
+  "policyUUID": "4711d3b2",
+  "bucketName": "androidwithawsamplif4ea91fe972b249ca87b1da3935a",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}

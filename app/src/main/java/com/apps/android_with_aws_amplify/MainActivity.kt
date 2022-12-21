@@ -44,6 +44,7 @@ class MainActivity : AppCompatActivity() {
         fabAdd.setOnClickListener {
             startActivity(Intent(this, AddNoteActivity::class.java))
         }
+
     }
     // receive the web redirect after authentication
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

@@ -21,20 +21,20 @@ import static com.amplifyframework.core.model.query.predicate.QueryField.field;
 
 /** This is an auto generated class representing the NoteData type in your schema. */
 @SuppressWarnings("all")
-@ModelConfig(pluralName = "NoteData", type = Model.Type.USER, version = 1, authRules = {
-  @AuthRule(allow = AuthStrategy.OWNER, ownerField = "owner", identityClaim = "cognito:username", provider = "userPools", operations = { ModelOperation.CREATE, ModelOperation.UPDATE, ModelOperation.DELETE, ModelOperation.READ })
+@ModelConfig(pluralName = "NoteData", authRules = {
+  @AuthRule(allow = AuthStrategy.OWNER, ownerField = "owner", identityClaim = "cognito:username", operations = { ModelOperation.CREATE, ModelOperation.UPDATE, ModelOperation.DELETE, ModelOperation.READ })
 })
 public final class NoteData implements Model {
-  public static final QueryField ID = field("NoteData", "id");
-  public static final QueryField NAME = field("NoteData", "name");
-  public static final QueryField DESCRIPTION = field("NoteData", "description");
-  public static final QueryField IMAGE = field("NoteData", "image");
+  public static final QueryField ID = field( "id");
+  public static final QueryField NAME = field( "name");
+  public static final QueryField DESCRIPTION = field( "description");
+  public static final QueryField IMAGE = field( "image");
   private final @ModelField(targetType="ID", isRequired = true) String id;
   private final @ModelField(targetType="String", isRequired = true) String name;
   private final @ModelField(targetType="String") String description;
   private final @ModelField(targetType="String") String image;
-  private @ModelField(targetType="AWSDateTime", isReadOnly = true) Temporal.DateTime createdAt;
-  private @ModelField(targetType="AWSDateTime", isReadOnly = true) Temporal.DateTime updatedAt;
+  private @ModelField(targetType="AWSDateTime") Temporal.DateTime createdAt;
+  private @ModelField(targetType="AWSDateTime") Temporal.DateTime updatedAt;
   public String resolveIdentifier() {
     return id;
   }

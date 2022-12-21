@@ -43,6 +43,14 @@
                 <data android:scheme="gettingstarted" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AddNoteActivity"
+            android:label="Add Note"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.apps.android_with_aws_amplify.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

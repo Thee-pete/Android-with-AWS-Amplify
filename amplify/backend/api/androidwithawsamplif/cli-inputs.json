@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "androidwithawsamplif",
+    "serviceName": "AppSync",
+    "defaultAuthType": {
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authandroidwithawsamplif623c4ba0"
+    },
+    "conflictResolution": {},
+    "additionalAuthTypes": []
+  }
+}
